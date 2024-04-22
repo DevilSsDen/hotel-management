@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signu.css">
+    <title>Hotel Management Signup</title>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h2>Hotel Management Signup</h2>
+        <form id="signupForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="error-message"></span>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError" class="error-message"></span>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span id="confirmPasswordError" class="error-message"></span>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" name="contactNumber" required>
+            <span id="contactNumberError" class="error-message"></span>
+
+            <label for="hotelName">Hotel Name:</label>
+            <input type="text" id="hotelName" name="hotelName" required>
+
+            <label for="hotelLocation">Hotel Location:</label>
+            <input type="text" id="hotelLocation" name="hotelLocation" required>
+
+            <label for="hotelType">Hotel Type:</label>
+            <select id="hotelType" name="hotelType" required>
+                <option value="" disabled selected>Select Hotel Type</option>
+                <option value="resort">Resort</option>
+                <option value="boutique">Boutique Hotel</option>
+                <option value="business">Business Hotel</option>
+            </select>
+
+            <label for="numRooms">Number of Rooms:</label>
+            <input type="number" id="numRooms" name="numRooms" required>
+
+            <label>
+                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                I agree to the Terms and Conditions
+            </label>
+
+            <button type="button" onclick="validateForm()">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

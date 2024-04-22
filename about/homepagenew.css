@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  
+  .row::after {
+    clear: both;
+    display: table;
+  }
+h1 {
+    margin-top:40px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(241, 235, 235);
+    font-family:Arial, Helvetica, sans-serif;
+    font:bolder;
+}
+h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: rgb(21, 20, 20);
+    font-family:Arial, Helvetica, sans-serif;
+    font:bolder;
+}
+
+body {
+    background: url(pexels-thorsten-technoman-338504.jpg) top center / cover no-repeat;
+    background-size:cover;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+main.container {
+    padding-top: 25px; 
+    padding-left:0;
+    padding-right:0;
+    max-width: 100%; /* Set maximum width to prevent horizontal scrollbar */
+}
+
+.intro {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Inconsolata';
+    font-size: 80px;
+    font-weight: bolder;
+    color: rgb(11, 9, 9);
+}
+.transition{
+    text-align: center;
+}
+.transition .rounded-circle{
+    border: 2px solid rgb(177, 27, 27); /* Set the border color */
+  border-radius: 50%; /* Make it a circle */
+  width:80px;
+  height:80px;
+  padding: 3px; /* Adjust padding to control the border width */
+  box-sizing: border-box; /* Include padding in total width and height */  
+}
+#Reviews {
+    margin-top: 55px;
+    text-align: center;
+    font-size: large;
+    margin: 0;
+    font: bolder;
+    color:rgb(0, 0, 0);
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(255, 255, 255, 0); /* Background color for the "Customer Reviews" section */
+    padding: 50px 0; /* Add padding to ensure content is visible */
+    box-shadow: 0 0 25px 0 rgb(241, 241, 241), 0 20px 25px 0 rgb(255, 255, 255);
+    
+}
+
+.review-container {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #050505;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.review-container dt {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-container dd {
+    font-size: 14px;
+    color: #080707;
+}
+
+header {
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+}
+
+
+.navbar {
+    position:fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(6, 6, 6, 0)  !important;
+    border-radius: 10px;
+}
+.solid-bg {
+    background-color: rgb(1, 0, 0) !important; /* Change to your desired solid background color */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.navbar-brand {
+    color: rgb(252, 251, 251) !important;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: 1px solid #ffffff; 
+    border-radius: 10px;
+    background-color: white;
+}
+
+.nav-link {
+    color: #f4f2f2 !important;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: crimson !important; 
+}
+
+
+.navbar-nav .nav-item.active .nav-link {
+    color: crimson !important;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-toggler-icon {
+        color:#e80c0c;
+        background-color: #ffffff;
+    }
+
+    .navbar-collapse {
+        background-color: #000000;
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffffff !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ec0dec !important;
+    }
+}
+
+.row {
+    display: flex;
+    height: 250px; /* Set the height to cover the top half of the viewport */
+    border-radius: 10px;    
+    margin-left: auto; /* Align left margin to auto */
+    margin-right: auto; /* Align right margin to auto */
+    margin-bottom:10px;
+    border-style: solid;
+    max-width: 1000px;
+    padding: 5px;
+    border-color:black;
+    background-color: rgba(255, 255, 255, 0.436);
+    color: rgba(1, 0, 0, 0.82);
+    font-family: 'Inconsolata';
+}
+
+.row .column {
+    position: relative;
+    width: 33.33%;
+}
+
+.row img {
+    width: 100%; /* Make the image width 100% to cover the entire column */
+    height: 228px; /* Set the height to cover half of the viewport */
+    object-fit: cover;
+}
+
+.row .hotel-name {
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    padding: 5px;
+    background-color: rgba(244, 237, 237, 0);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    transition-property: transform, opacity;
+    transition-duration: 0.99s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;
+}
+
+  .row img:hover {
+    transform: scale(1.01);
+  }
+
+  #features {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0) ;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#features h3 {
+    text-align: center;
+    color:black;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Arial', sans-serif;
+}
+
+#features p {
+    text-align: center;
+    margin-bottom:0;
+    color:black;
+    font-family: 'Arial', sans-serif;
+}
+
+#features img {
+    margin-left: 90px;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 20px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.row2 {
+    display: flex;
+    height: 250px; 
+    width:100%;
+    border-style: solid;
+    padding: 0;
+    border:none;
+    margin-left: auto; /* Center align content */
+    margin-right: auto; /* Center align content */
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.82);
+    font-family: 'Inconsolata';
+    box-shadow: 0 0 25px 0 rgb(152, 146, 147), 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row2 .column {
+    position: relative;
+    width: 33.33%;
+}
+
+footer {
+    text-align: center;
+}
+
+.footer-container {
+    background-color: rgb(37, 37, 37, 0.9);
+    display: flex;
+}
+
+.footer-container a {
+    color: #F5F6F7;
+    padding: 42px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.footer-icons {
+    justify-content: space-between;
+    padding: 16px 64px 0px 0px;
+}
+
+.footer-icons ul {
+    list-style-type: none;
+}
+
+.footer-icons li {
+    display: inline-block;
+}
+
+.footer-right {
+    margin-left: auto;
+}
+
+.copyright {
+    background-color: #F5F6F7;
+    overflow: hidden;
+}
+.fab.fa-linkedin-in {
+    color: #0077B5; /* LinkedIn's brand color */
+    font-size: 24px; /* Example size */
+}
+.fab.fa-instagram {
+    color: #E4405F; /* Instagram's brand color */
+    font-size: 24px; /* Example size */
+    margin-top:20px;
+}
+
+.fab.fa-youtube {
+    color: #FF0000; /* YouTube's brand color */
+    font-size: 24px; /* Example size */
+}

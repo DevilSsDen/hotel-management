@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <title>StayFinder</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="hotel.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-radius: 10px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" class="rounded-circle" width=30px height=30px alt="Logo">
+                StayFinder
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FAQ">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main class="container">
+        <div class="intro">        
+          Discover the Lowest Hotel Prices, Effortlessly...
+        </div>
+        <div class="transition">
+          <a class="searchbar" href="search.html">
+          <img src="searchicon.png" class="rounded-circle" alt="search icon"></a>
+        </div>
+        <hr>
+        <section id="categories">
+            <h2>Popular Hotel Categories</h2>        
+                <div class="row">
+                  <div class="column">
+                    <a href=hotel><img src="luxury.png" alt="Luxury Hotel"  style="width:100%"></a>
+                    <div class="hotel-name">Luxury Hotel</div>
+                  </div>
+                  <div class="column">
+                    <a href=hotel><img src="budget.png" alt="Budget-friendly Hotel"  style="width:100%"></a>
+                    <div class="hotel-name">Budget-friendly Hotel</div>
+                  </div>
+                  <div class="column">
+                    <a href=hotel><img src="boutique.png" alt="Boutique Hotel"  style="width:100%"></a>
+                    <div class="hotel-name">Boutique Hotel</div>
+                  </div>
+                </div>
+        </section>
+
+        <section id="Reviews">
+          <h2>Customer Reviews</h2>
+          <div id="reviewContainer" class="review-container"></div>
+      </section>
+      <script src="hotel.js"></script>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <a href="#" class="logo"><i class="fab fa-modx"></i>StayFinder</a>
+          <div class="footer-icons">
+            <ul>
+              <li><a href="https://www.linkedin.com/channel" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com/channel" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/channel" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+          </div>
+          <a class="link footer-right" href="contact.html">Customer Support</a>
+        </div>
+    
+      <div class="copyright">
+        <p style="color: #95AAB6;">
+          2024 All rights reserved.
+        </p>
+      </div>
+    </footer>    
+</body>
+</html>

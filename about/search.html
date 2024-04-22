@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="search.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Add a filter container -->
+        <div class="filters">
+            <!-- Rating filter -->
+            <div class="filter">
+                <label for="rating">Rating:</label>
+                <select id="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            
+            <!-- Price filter -->
+            <div class="filter">
+                <label for="price">Price per night:</label>
+                <input type="number" id="price" min="100" max="50000" placeholder="100-50000">
+            </div>
+            
+            <!-- Property type filter -->
+            <div class="filter">
+                <label for="propertyType">Property Type:</label>
+                <select id="propertyType">
+                    <option value="luxury">Luxury Hotel</option>
+                    <option value="budget">Budget-friendly Hotel</option>
+                    <option value="boutique">Boutique Hotel</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Search input only -->
+        <input type="text" placeholder="Search..." class="search-input">
+    </div>
+</body>
+</html>

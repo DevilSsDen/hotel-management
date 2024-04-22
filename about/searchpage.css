@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#ddd;
+}
+
+header {
+    box-shadow: 0 0 25px 0 rgb(12, 12, 12), 0 20px 25px 0 rgba(0, 0, 0, 0.2);   
+    color:crimson;
+    padding-bottom:25px;
+}
+
+
+
+.navbar {
+    position:fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: #000 !important; 
+}
+
+.navbar-brand {
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: 1px solid #ffffff; 
+    border-radius: 10px;
+    background-color: white;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: crimson !important; 
+}
+
+
+.navbar-nav .nav-item.active .nav-link {
+    color: crimson !important;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-toggler-icon {
+        color:#e80c0c;
+        background-color: #ffffff;
+    }
+
+    .navbar-collapse {
+        background-color: #000000;
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffffff !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ec0dec !important;
+    }
+}
+
+
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.filters,
+.search {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius:10px;
+    margin-bottom: 20px;
+    color:rgb(0, 0, 0);
+}
+
+.filters h2,
+.search h2 {
+    font-weight:600;
+    font-size:40px;
+    margin-bottom: 10px;
+}
+
+.price-filter label,
+.hotel-type-filter label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.price-filter input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.price-filter output {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.hotel-type-filter select {
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+.results {
+    background-color: #ffffff;
+    border-radius:10px;
+    padding: 20px;
+    color:rgb(5, 5, 5);
+    
+}
+
+.results h2 {
+    margin-bottom: 10px;
+    font-weight:600;
+}
+
+.hotel-card {
+    border: 1px solid #ccc;
+    border-radius:10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-card img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hotel-card h3 {
+    margin-bottom: 5px;
+    font-size:30px;
+    font-weight:600;
+}
+
+.hotel-card button {
+    margin-top:50px;
+    padding: 10px 20px;
+    background-color: white;
+    font-size:bolder;
+    color: #010000;
+    border: solid;
+    border-color:black;
+    cursor: pointer;
+    
+}
+footer {
+    text-align: center;
+}
+
+.footer-container {
+    background-color: rgba(5, 5, 5, 0.9);
+    display: flex;
+}
+
+.footer-container a {
+    color: #F5F6F7;
+    padding: 42px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.footer-icons {
+    justify-content: space-between;
+    padding: 16px 64px 0px 0px;
+}
+
+.footer-icons ul {
+    list-style-type: none;
+}
+
+.footer-icons li {
+    display: inline-block;
+}
+
+.footer-right {
+    margin-left: auto;
+}
+
+.copyright {
+    background-color: #F5F6F7;
+    overflow: hidden;
+}
+.fab.fa-linkedin-in {
+    color: #0077B5; /* LinkedIn's brand color */
+    font-size: 24px; /* Example size */
+}
+.fab.fa-instagram {
+    color: #E4405F; /* Instagram's brand color */
+    font-size: 24px; /* Example size */
+    margin-top:20px;
+}
+
+.fab.fa-youtube {
+    color: #FF0000; /* YouTube's brand color */
+    font-size: 24px; /* Example size */
+}
+.hidden {
+    display: none;
+}

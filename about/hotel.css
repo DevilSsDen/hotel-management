@@ -1,0 +1,238 @@
+* {
+    box-sizing:border-box; 
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  
+  .row::after {
+    clear: both;
+    display: table;
+  }
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    background-image: url(newbackground.jpeg);
+    
+}
+main.container {
+    padding-top: 25px; /* Adjust the value as needed */
+}
+
+.intro {
+    text-align: center;
+    margin-top: 50px;  
+    font-family: 'Inconsolata', monospace;
+    text-shadow: 0 0 10px crimson;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(224, 126, 27);
+}
+.transition{
+    text-align: center;
+}
+.transition .rounded-circle{
+    border: 2px solid crimson; /* Set the border color */
+  border-radius: 50%; /* Make it a circle */
+  width:80px;
+  height:80px;
+  padding: 3px; /* Adjust padding to control the border width */
+  box-sizing: border-box; /* Include padding in total width and height */  
+}
+#Reviews {
+    text-align: center;
+    font-size: large;
+    font: bolder;
+    font-style: italic;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.review-container {
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+.review-container dt {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-container dd {
+    font-size: 14px;
+    color: #555;
+}
+
+header {
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+}
+
+
+.navbar {
+    position:fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: #000 !important; 
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border: 1px solid #ffffff; 
+    border-radius: 10px;
+    background-color: white;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: crimson !important; 
+}
+
+
+.navbar-nav .nav-item.active .nav-link {
+    color: crimson !important;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-toggler-icon {
+        color:#e80c0c;
+        background-color: #ffffff;
+    }
+
+    .navbar-collapse {
+        background-color: #000000;
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffffff !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ec0dec !important;
+    }
+}
+
+.row {
+    display: flex;
+          
+   border-radius: 10px;
+   border-style:solid;     
+   padding:5px;      
+   background-color: black;
+   color:white;
+   font-family: 'Inconsolata', monospace;
+   box-shadow: 0 0 25px 0 rgb(152, 146, 147), 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .row .column {
+    position: relative;
+    width: 33.33%;
+  }
+  
+  .row img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .row .hotel-name {
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition-property: transform, opacity;
+    transition-duration: 0.99s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.2s;
+  }
+  .row img:hover {
+    transform: scale(1.01);
+  }
+
+footer {
+    text-align: center;
+}
+
+.footer-container {
+    background-color: #252525;
+    display: flex;
+}
+
+.footer-container a {
+    color: #F5F6F7;
+    padding: 42px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.footer-icons {
+    justify-content: space-between;
+    padding: 16px 64px 0px 0px;
+}
+
+.footer-icons ul {
+    list-style-type: none;
+}
+
+.footer-icons li {
+    display: inline-block;
+}
+
+.footer-right {
+    margin-left: auto;
+}
+
+.copyright {
+    background-color: #F5F6F7;
+    overflow: hidden;
+}
+.fab.fa-linkedin-in {
+    color: #0077B5; /* LinkedIn's brand color */
+    font-size: 24px; /* Example size */
+}
+.fab.fa-instagram {
+    color: #E4405F; /* Instagram's brand color */
+    font-size: 24px; /* Example size */
+    margin-top:20px;
+}
+
+.fab.fa-youtube {
+    color: #FF0000; /* YouTube's brand color */
+    font-size: 24px; /* Example size */
+}

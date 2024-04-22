@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <title>SearchPage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.css">    
+    <link rel="stylesheet" href="searchpage.css">    
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-radius: 10px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" class="rounded-circle" width=30px height=30px alt="Logo">
+                    StayFinder
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Hotels">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#FAQ">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="search">
+            <h2>Find your ideal hotel</h2>
+            <form>
+                <input type="text" placeholder="Enter destination...">
+                <button type="submit" style="color:white; background-color:black" >Search</button>
+            </form>
+        </section>
+        <section class="filters">
+            <h2>Filters</h2>
+            <div id="price-slider"></div>
+            <output for="price-slider" id="price-output"></output>
+            <div class="hotel-type-filter">
+                <label for="hotel-type">Hotel Type:</label>
+                <select name="hotel-type" id="hotel-type">
+                    <option value="">Select Hotel Type</option>
+                    <option value="luxury">Luxury Hotel</option>
+                    <option value="budget">Budget-friendly Hotel</option>
+                    <option value="boutique">Boutique Hotel</option>
+                </select>
+            </div>
+        </section>
+            
+        <section class="results">
+            <h2>Search Results</h2>
+                <div class="row hotel-card">
+                    <div class="col-md-4">
+                     <img src="ibis Paris Montmarte 18th (1).png" alt="Hotel Image"><br>
+                     
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Ibis Paris Montmarte 18th</h3>
+                        <p>Boutique Hotel</p>                     
+                      <p>Location: Sacré-Coeur,Paris</p>
+                     <p class="price">Price per night: ₹30,000</p>
+                    </div>
+                    <div class="col-md-2">
+                      <button>Book Now</button>
+                    </div>
+                </div>
+                <div class="row hotel-card">
+                    <div class="col-md-4">
+                     <img src="Hotel Rambuttri Village Inn.png" alt="Hotel Image"><br>
+                     
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Hotel Rambuttri Village Inn</h3>
+                     <p id="Budget">Budget-Friendly Hotel</p>               
+                     <p>Location: Khaosan,Bangkok</p>
+                    <p class="price">Price per night: ₹1000</p>
+                    </div>
+                    <div class="col-md-2">
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                <div class="row hotel-card">
+                    <div class="col-md-4">
+                     <img src="Trident Jaipur hotel.png" alt="Hotel Image">
+                    </div>
+                    <div class="col-md-6">                        
+                     <h3>Trident Jaipur Hotel</h3>
+                     <p>Luxury Hotel</p>               
+                     <p>Location: Jaipur,India</p>
+                    <p class="price">Price per night: ₹6,000</p>
+                    </div>
+                    <div class="col-md-2">
+                      <button>Book Now </button>
+                    </div>
+                </div>
+        </section>
+        <script src="https://unpkg.com/phosphor-icons"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.4/nouislider.min.js"></script>
+        <script src="searchpage.js"></script>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+          <a href="#" class="logo"><i class="fab fa-modx"></i>StayFinder</a>
+          <div class="footer-icons">
+            <ul>
+              <li><a href="https://www.linkedin.com/channel" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.instagram.com/channel" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/channel" target="_blank"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+          </div>
+          <a class="link footer-right" href="contact.html">Customer Support</a>
+        </div>
+    
+      <div class="copyright">
+        <p style="color: #95AAB6;">
+          2024 All rights reserved.
+        </p>
+      </div>
+    </footer> 
+</body>
+</html>
